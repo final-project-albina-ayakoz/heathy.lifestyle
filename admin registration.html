@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>admin registration</title>
+	<link rel="stylesheet" href="admin registration.css">
+	<link rel="shortcut icon" href="images/unnamed.jpg">
+</head>
+<body>
+	<header>
+		<h1><font>HEALTHY</font> LIFESTYLE</h1>
+		<h3>Beauty and Health</h3>
+	  <nav>
+		<a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+      <a href="sport.html">Sports</a>
+      <a href="book.html">Books</a>
+      <a href="admin registration.html">Admin</a>
+      <div class="animation start-home"></div>
+	  </nav>
+	</header>
+	<main>
+	<div class="page">
+		<div class="form-box">
+		 <div class="button-box">
+			<a href="list of products for sale.html"><strong> Log in Admin Panel</strong></a>
+	<form action="\" method="POST" id="log" class="input-group">
+		<label>
+			<h3>login</h3>
+			<label>
+				<input id="login" type="text" name="login" class="input-field">
+			</label>
+			<h3>Password</h3>
+			<label>
+				<input id="password" type="password" name="password"class="input-field">
+			</label>
+			<label>
+				<button onclick="log_in()" type="submit" class="submit-btn">log in</button>
+			</label>
+		</label>
+	</form>
+</main>
+<script src="admin registration.js"></script>
+ <script src="admin registration.js"></script>
+	<script type="text/javascript">
+		function log_in() {
+			const userLogin = document.getElementById('login');
+			const userPassword = document.getElementById('password');
+			if (userLogin.value == 'admin' && userPassword.value == 'admin') {
+				window.open('file:///C:/Users/HP/Downloads/FUCKIN%20PROJECT%20(2)/FUCKIN%20PROJECT%20(2)/list%20of%20products%20for%20sale.html');
+			}
+			else {
+				alert("your password incorrect");
+				window.open();
+			}
+		};
+	</script>	
+	</div>
+</div>
+</body>
+</html>

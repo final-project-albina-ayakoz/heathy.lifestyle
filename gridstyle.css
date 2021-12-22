@@ -1,0 +1,132 @@
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #FEFEFE;
+  background: linear-gradient(120deg,#39c044 20%,#ff71ff);
+}
+
+.intro {
+  padding: 48px 0 48px 24px;
+  font-size: 1.5rem;
+}
+
+h1, h2 {
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+  line-height: 1.1;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: darkorange;
+}
+
+.container {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* article styling */
+article {
+  color: #1e2432;
+  background: #FFF;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all .24s ease-in-out;
+}
+
+article:hover {
+  transform: scale(1.023);
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 25px 50px -12px;
+}
+
+article > * {
+  padding: 20px;
+}
+
+article figure {
+  margin: 0;
+  padding: 0;
+}
+
+article footer {
+  text-align: right;
+  border-top: 1px solid #6b7280;
+}
+
+h2 a {
+  color: #1e2432;
+  text-decoration: none;
+}
+
+time {
+  margin: 0;
+  color: #6b7280;
+  font-size: 1rem;
+}
+
+.read-more {
+  color: #bc5200;
+  text-decoration: none;  
+}
+
+.read-more:hover, .read-more:active {
+  text-decoration: underline;  
+}
+
+/* The masonry grid */
+.grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: masonry;
+}
+
+@media screen and (min-width: 680px) {
+  /* set the grid to 2 columns */
+  .grid {  
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* set the grid to 2 columns */
+  .grid {  
+    gap: 18px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* set the grid to 2 columns */
+  .grid {  
+    gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .intro {
+    text-align: center;
+  }
+  
+  /* set the grid to 3 columns */
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

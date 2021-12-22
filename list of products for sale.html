@@ -1,0 +1,90 @@
+<html>
+<head>
+	<title>list of products for sale</title>
+</head>
+<body style="background-color: rgb(252, 223, 223);">
+	<style type="text/css">
+		#logo {
+			float: left;
+			font-size: 40px;
+			color: rgb(75, 20, 20);
+		}
+		#pages {
+			float: right;
+		}
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: rgb(247, 210, 210);
+			font-size: 25px;	
+		}
+		li a {
+			text-decoration: none;
+			padding: 16px;
+			display: block;
+			font-size: 25px;
+			color: rgb(163, 24, 24);
+
+		}
+		li a:hover {
+  			background-color: white;
+		}
+		h1	{
+			background-color: rgb(255, 170, 170);
+			text-align: center;
+			color: white;
+		}
+		div	{
+			background-color: rgb(255, 158, 158);
+			text-align: center;
+			color: white;
+			font-size: 25px;
+		}
+		#customer1 {
+			color:red;
+		}	
+		button {
+			color:red;
+			background-color: black;
+			width: 80px;
+			height: 30px;
+			font-size: 20px;
+
+		}	
+		button:hover {
+			background-color: white;
+		}
+	</style>
+	<header>
+		<nav>
+			<ul id="ulNav">
+				<li id="logo">Admin panel</li>
+				<li id="pages"><a href="profile.html">Profile</a></li>
+				<li id="pages"><a href="users.html">Users</a></li>
+				<li id="pages"><a href="list Of Products for sale.html">List Of Products for sale</a></li>
+				<li id="pages"><a href="admin registration.html">Admin registration</a></li>
+				<li id="pages"><a href="Registration Page.html">Registration</a></li>
+			</ul><br>
+		</nav>
+	</header>
+	<h1>List of products for sale</h1>
+	<div id="list">
+	<div id="product"></div>
+	<div id="customer1">Customer: <div id="customer"></div></div>
+	<button onclick="sale()" >Sale</button>
+    </div>
+	<script type="text/javascript">
+		document.getElementById('product').innerHTML = localStorage.getItem('book');
+		document.getElementById('customer').innerHTML = localStorage.getItem('name');
+		function sale() {
+			alert('SALE! this product');
+			localStorage.removeItem('book');
+			var div = document.getElementById('list');
+			div.style.display = 'none';
+		}
+	</script>
+	<script src="list of products for sale.js"></script>
+</body>
+</html>

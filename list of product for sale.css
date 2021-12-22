@@ -1,0 +1,166 @@
+.first_section{
+	width: 100%;
+	height: 800px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.header{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+
+    line-height: 2.5;
+    font-size: 15px;
+    color: var(--black);
+    font-family: Montserrat,sans-serif;
+    box-sizing: border-box;
+    word-break: break-word;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 10010;
+    background: var(--white);
+    box-shadow: 0 4px 15px rgba(0,0,0,.05);
+}
+.nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+	justify-content: space-between;
+}
+.nav li {
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+	border: 1px;
+    height: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-bottom: 0%;
+    font-style: black;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+}
+.nav ul {background-color: blue;
+	        display: flex;
+          justify-content: space-between; }
+
+.nav a{ display: block;}
+.nav a:link {
+    color: rgb(0, 0, 0);
+    line-height: 35px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.nav a:visited {
+    color: rgb(15, 235, 26);
+    line-height: 35px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.nav  li:hover a{color: rgb(9, 255, 0);}
+
+.customBtncustomBtn--mediumcustomBtn--orangeloginConnect{
+
+    -webkit-text-size-adjust: 100%;
+    --white: #FFFFFF;
+    --black: #111111;
+    --red-gradient: linear-gradient(90deg, #e97e5a 0%, #EE3436 100%);
+    --green-button-gradient: linear-gradient(270.74deg, #03B18D 0%, #1DC775 100%);
+    --green-color: #1DC775;
+    --red-color: #EE3436;
+    --background-main: #F5F8FA;
+    --default-transition-speed: .175s;
+    --default-transition-timing-function: ease;
+    --window-height: 100vh;
+    --window-width: 100vw;
+    --layout-width-desktop: 1110px;
+    --layout-width-mobile: calc(100vw - 30px);
+    --default-shadow: 0px 4px 15px rgba(0, 192, 156, 0.07);
+    --border-radius: 8px;
+    --swiper-theme-color: #007aff;
+    --swiper-navigation-size: 44px;
+    
+    font-family: Montserrat,sans-serif;
+    box-sizing: border-box;
+    word-break: break-word;
+    text-decoration: none;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: var(--border-radius);
+    white-space: nowrap;
+    will-change: transform;
+    transition: transform var(--default-transition-speed) var(--default-transition-timing-function);
+    font-weight: 700;
+    font-size: .875rem;
+    line-height: 1.21429;
+    height: 40px;
+    position: relative;
+    z-index: 10;
+    background: var(--red-gradient);
+    color: var(--white);
+    min-width: 150px;
+    padding: 0 15px;
+
+}
+
+.customBtncustomBtn--mediumcustomBtn--orangecustomBtn--transloginConnect{
+    -webkit-text-size-adjust: 100%;
+    --white: #FFFFFF;
+    --black: #111111;
+    --red-gradient: linear-gradient(90deg, #e97e5a 0%, #EE3436 100%);
+    --green-button-gradient: linear-gradient(270.74deg, #03B18D 0%, #1DC775 100%);
+    --green-color: #1DC775;
+    --red-color: #EE3436;
+    --background-main: #F5F8FA;
+    --default-transition-speed: .175s;
+    --default-transition-timing-function: ease;
+    --window-height: 100vh;
+    --window-width: 100vw;
+    --layout-width-desktop: 1110px;
+    --layout-width-mobile: calc(100vw - 30px);
+    --default-shadow: 0px 4px 15px rgba(0, 192, 156, 0.07);
+    --border-radius: 8px;
+    --swiper-theme-color: #007aff;
+    --swiper-navigation-size: 44px;
+
+    font-family: Montserrat,sans-serif;
+    box-sizing: border-box;
+    word-break: break-word;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: var(--border-radius);
+    white-space: nowrap;
+    will-change: transform;
+    transition: transform var(--default-transition-speed) var(--default-transition-timing-function);
+    font-weight: 700;
+    font-size: .875rem;
+    line-height: 1.21429;
+    height: 40px;
+    position: relative;
+    z-index: 10;
+    border: 1px solid var(--red-color);
+    color: var(--red-color);
+    background: 0 0;
+    min-width: 150px;
+    padding: 0 15px;
+    margin-left: 8px;
+}
+
+
+.text{
+	width: 45%;
+}
+.img{
+	width: 20%;
+
+}
