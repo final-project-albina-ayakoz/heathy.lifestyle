@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>admin</title>
+</head>
+<link rel="shortcut icon" href="images/unnamed.jpg">
+<body style="background-color: rgb(252, 223, 223);">
+	<style type="text/css">
+		#logo {
+			float: left;
+			font-size: 40px;
+			color: rgb(75, 20, 20);
+		}
+		#pages {
+			float: right;
+		}
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: rgb(247, 210, 210);
+			font-size: 25px;	
+		}
+		li a {
+			text-decoration: none;
+			padding: 16px;
+			display: block;
+			font-size: 25px;
+			color: rgb(163, 24, 24);
+
+		}
+		li a:hover {
+  			background-color: white;
+		}
+		h2 {
+			color:red;
+		}
+		li {
+			color: red;
+		}
+		div	{
+			background-color: white;
+			width: 150px;
+		}
+		button {
+			width: 80px;
+			height: 30px;
+			background-color: red;
+			color: white;	
+		}
+		#forCenter {
+			display: grid;
+  			justify-content: center;
+		}
+	</style>
+	<header>
+		<nav>
+			<ul id="ulNav">
+				<li id="logo">Admin panel</li>
+				<li id="pages"><a href="profile.html">Profile</a></li>
+				<li id="pages"><a href="users.html">Users</a></li>
+				<li id="pages"><a href="list Of Products for sale.html">List Of Products for sale</a></li>
+				<li id="pages"><a href="admin registration.html">Admin registration</a></li>
+				<li id="pages"><a href="Registration Page.html">Registration</a></li>
+			</ul><br>
+		</nav>
+	</header>
+	<ul id="forCenter">
+		<h2>Users:</h2>	
+		<li>User name:<div id="userN"></div></li>
+		<li>User password:<div id="userP"></div></li>
+		<label>
+			<button type="submit" onclick ="block()">Add</button>
+			<button type="submit" onclick="block()">Block</button>
+		</label>
+	</ul>
+	<script type="text/javascript">
+		document.getElementById('userN').innerHTML = localStorage.getItem('name');
+		document.getElementById('userP').innerHTML = localStorage.getItem('pass');
+
+		//function
+		function block() {
+			localStorage.removeItem("name");
+			localStorage.removeItem("pass");
+		}
+	</script>
+</body>
+</html>
